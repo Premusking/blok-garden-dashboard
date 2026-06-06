@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@400;500&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --font-mono: 'DM Mono', 'Fira Code', monospace;
+  --blok-green: #1D9E75;
+  --blok-green-dim: #0F6E56;
+  --blok-green-bg: rgba(29,158,117,0.12);
+  --blok-green-border: rgba(29,158,117,0.35);
+  --bg-base:    #0D0F12;
+  --bg-surface: #151820;
+  --bg-card:    #1C2030;
+  --bg-hover:   #232840;
+  --text-primary:   #F0F2F8;
+  --text-secondary: #8B90A8;
+  --text-muted:     #555B72;
+  --border-subtle:  rgba(255,255,255,0.07);
+  --border-default: rgba(255,255,255,0.12);
+  --color-pos: #1D9E75;
+  --color-neg: #E24B4A;
+  --color-warn: #EF9F27;
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 14px;
+  --r-xl: 20px;
+}
+
+html, body, #root {
+  height: 100%;
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--blok-green); text-decoration: none; }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-default); border-radius: 3px; }
+
+.pos { color: var(--color-pos); }
+.neg { color: var(--color-neg); }
+.warn { color: var(--color-warn); }
+.muted { color: var(--text-secondary); }
+.mono { font-family: var(--font-mono); font-size: 0.9em; }
+
+.card {
+  background: var(--bg-card);
+  border: 0.5px solid var(--border-subtle);
+  border-radius: var(--r-lg);
+  padding: 1.25rem;
+}
+
+.card-title {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.badge-green {
+  background: var(--blok-green-bg);
+  color: #3dcca0;
+  border: 0.5px solid var(--blok-green-border);
+}
+
+.badge-warn {
+  background: rgba(239,159,39,0.12);
+  color: var(--color-warn);
+  border: 0.5px solid rgba(239,159,39,0.3);
+}
+
+.badge-muted {
+  background: rgba(255,255,255,0.06);
+  color: var(--text-secondary);
+  border: 0.5px solid var(--border-subtle);
+}
+
+[data-rk] { --rk-colors-accentColor: #1D9E75 !important; }

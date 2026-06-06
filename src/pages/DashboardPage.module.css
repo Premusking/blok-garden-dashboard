@@ -1,0 +1,98 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.25rem 3rem;
+  width: 100%;
+}
+
+.dashboard {
+  position: relative;
+}
+
+.loadingWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 4rem;
+}
+
+.spinner {
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--border-subtle);
+  border-top-color: var(--blok-green);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.errorCard {
+  background: rgba(226,75,74,0.08);
+  border: 0.5px solid rgba(226,75,74,0.3);
+  border-radius: var(--r-lg);
+  padding: 1.25rem;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.refetchBadge {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  font-size: 11px;
+  color: var(--text-muted);
+  background: var(--bg-card);
+  border: 0.5px solid var(--border-subtle);
+  border-radius: 20px;
+  padding: 2px 10px;
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5rem 1rem;
+  gap: 12px;
+}
+
+.emptyIcon {
+  font-size: 48px;
+  color: var(--blok-green);
+  opacity: 0.4;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.emptyTitle {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.emptySub {
+  font-size: 15px;
+  color: var(--text-secondary);
+  max-width: 440px;
+  line-height: 1.6;
+}
+
+.emptyLinks {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.emptyLinks a {
+  color: var(--blok-green);
+}

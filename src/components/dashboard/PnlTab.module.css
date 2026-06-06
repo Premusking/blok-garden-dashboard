@@ -1,0 +1,60 @@
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.valueLine {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.bigValue {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.pos { color: var(--color-pos); font-size: 14px; }
+.neg { color: var(--color-neg); font-size: 14px; }
+
+.rangePicker {
+  display: flex;
+  gap: 4px;
+  background: var(--bg-surface);
+  border: 0.5px solid var(--border-subtle);
+  border-radius: var(--r-md);
+  padding: 3px;
+}
+
+.rangeBtn {
+  background: none;
+  border: none;
+  border-radius: var(--r-sm);
+  color: var(--text-muted);
+  font-size: 12px;
+  font-family: var(--font-sans);
+  padding: 4px 10px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.rangeBtn:hover { color: var(--text-secondary); }
+
+.rangeBtn.active {
+  background: var(--bg-card);
+  color: var(--text-primary);
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.error { color: var(--color-warn); }

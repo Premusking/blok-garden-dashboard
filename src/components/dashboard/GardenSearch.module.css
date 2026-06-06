@@ -1,0 +1,86 @@
+.wrap {
+  max-width: 680px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+}
+
+.inputWrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: var(--bg-card);
+  border: 0.5px solid var(--border-default);
+  border-radius: var(--r-md);
+  padding: 0 12px;
+  gap: 8px;
+  transition: border-color 0.15s;
+}
+
+.inputWrap:focus-within {
+  border-color: var(--blok-green);
+}
+
+.icon {
+  color: var(--text-muted);
+  font-size: 16px;
+}
+
+.input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  padding: 12px 0;
+}
+
+.input::placeholder { color: var(--text-muted); font-family: var(--font-sans); }
+
+.myWallet {
+  background: rgba(29,158,117,0.12);
+  border: 0.5px solid var(--blok-green-border);
+  border-radius: var(--r-sm);
+  color: #3dcca0;
+  font-size: 12px;
+  padding: 4px 10px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+
+.myWallet:hover { background: rgba(29,158,117,0.2); }
+
+.loadBtn {
+  background: var(--blok-green);
+  border: none;
+  border-radius: var(--r-md);
+  color: white;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+
+.loadBtn:hover { background: var(--blok-green-dim); }
+
+.error {
+  color: var(--color-neg);
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.hint {
+  color: var(--text-muted);
+  font-size: 12px;
+  margin-top: 8px;
+}

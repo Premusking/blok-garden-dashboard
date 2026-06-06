@@ -1,0 +1,60 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 720px) {
+  .grid { grid-template-columns: 1fr; }
+}
+
+.proposalRow {
+  padding: 12px;
+  border-radius: var(--r-md);
+  border: 0.5px solid var(--border-subtle);
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.proposalRow:hover { background: var(--bg-hover); }
+.proposalRow.selected {
+  border-color: var(--blok-green-border);
+  background: rgba(29,158,117,0.06);
+}
+
+.proposalTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.proposalId {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.proposalMeta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.tallyBars { margin-top: 8px; }
+
+.voteList { margin-top: 4px; }
+
+.voteRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 0;
+  border-bottom: 0.5px solid var(--border-subtle);
+  font-size: 13px;
+}
+.voteRow:last-child { border-bottom: none; }
+
+.voteYes { color: var(--color-pos); font-weight: 500; }
+.voteNo  { color: var(--color-neg); font-weight: 500; }
