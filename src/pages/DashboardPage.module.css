@@ -96,3 +96,74 @@
 .emptyLinks a {
   color: var(--blok-green);
 }
+
+.errorTitle {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-warn);
+  margin-bottom: 8px;
+}
+
+.errorBody {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.errorHint {
+  background: var(--bg-surface);
+  border: 0.5px solid var(--border-subtle);
+  border-radius: var(--r-md);
+  padding: 12px 14px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.errorHint strong { color: var(--text-primary); }
+.errorHint ol { padding-left: 18px; margin-top: 6px; }
+.errorHint a { color: var(--blok-green); }
+
+.emptyCards {
+  display: flex;
+  gap: 12px;
+  margin: 4px 0 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.emptyCard {
+  background: var(--bg-card);
+  border: 0.5px solid rgba(226,75,74,0.25);
+  border-radius: var(--r-lg);
+  padding: 14px 18px;
+  text-align: left;
+  min-width: 200px;
+  max-width: 240px;
+}
+
+.emptyCardGreen {
+  border-color: var(--blok-green-border);
+}
+
+.emptyCardIcon {
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: var(--color-neg);
+}
+
+.emptyCardGreen .emptyCardIcon { color: var(--color-pos); }
+
+.emptyCardLabel {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.emptyCardDesc {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
